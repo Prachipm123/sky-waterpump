@@ -1,0 +1,137 @@
+/* body {
+  padding: 0;
+  margin: 0;
+  background-color: #17141d;
+  color: white;
+  font-family: "DM Mono", monospace;
+  text-align: justify;
+} */
+
+.blogCard {
+  height: auto;
+  width: 400px;
+  min-width: 380px;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.77);
+  /* background: rgba(5, 5, 5, 0.7); */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: 0.2s;
+  margin: 0;
+  scroll-snap-align: start;
+  clear: both;
+  position: relative;
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 0.5px solid rgba(0, 0, 0, 0.29);
+  color: white;
+  font-family: "DM Mono", monospace;
+  text-align: justify;
+}
+
+.blogCard a {
+  text-decoration: none;
+}
+
+.blogCard:focus-within ~ .blogCard,
+.blogCard:hover ~ .blogCard {
+  transform: translateX(130px);
+}
+
+.blogCard:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
+}
+
+.blogCard:not(:first-child) {
+  margin-left: -130px;
+}
+
+.blogCardImg {
+  padding: 0rem;
+}
+
+.blogCardImg img {
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+  height: 200px;
+}
+
+.blogCardContent {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogCardData {
+  margin-bottom: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.blogCardData span {
+  font-size: 12px;
+  margin: 0 0 1rem;
+  color: #6a6a7a;
+}
+
+.blogCardData h2 {
+  font-size: 15px;
+  margin: 0.25rem 0 auto;
+  text-decoration: none;
+  color: inherit;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.blogCardData h2:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.blogCardData p {
+  font-size: 13px;
+}
+
+.blogCardData a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.blogBtn {
+  margin: 1rem 0 2rem;
+  padding: 0.5rem 0 1rem;
+  line-height: 2;
+  margin-bottom: 0;
+}
+
+.blogBtn a {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.5rem;
+  color: #acacbe;
+  text-transform: uppercase;
+  font-size: 0.66rem;
+  border: 3px solid #1b1818;
+  border-radius: 2rem;
+  padding: 0.2rem 0.85rem 0.25rem;
+  position: relative;
+}
+
+.blogBtn a:hover {
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  text-shadow: none;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-box-decoration-break: clone;
+  background-clip: text;
+  border-color: white;
+}

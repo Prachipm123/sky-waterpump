@@ -1,0 +1,28 @@
+.career_content {
+  width: 70%;
+}
+.career_form {
+  width: 30%;
+}
+
+.career_card {
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .career_content {
+    width: 100%;
+  }
+  .career_form {
+    width: 100%;
+  }
+}
+
+.shortHr {
+  width: 100%;
+  /* border-style: solid;
+  border-width: 0.5px; */
+  border: 0.5px solid #e5e5e5;
+}
