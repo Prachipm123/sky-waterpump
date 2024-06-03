@@ -1,0 +1,51 @@
+.iconBar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius: 20px;
+}
+
+.iconBar a {
+  display: block;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+  padding-right: 11px;
+  transition: all 0.3s ease;
+  color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.iconBar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.twitter {
+  background: #272424;
+  color: white;
+}
+
+.instagram {
+  background: #ff085c;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #ff0000;
+  color: white;
+}
